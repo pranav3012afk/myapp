@@ -10,7 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class AdminPanel extends AppCompatActivity {
+public class
+AdminPanel extends AppCompatActivity {
     LinearLayout allusers, admindonation, adminmessage;
     ImageView homeicon, donationicon, profileicon, devicon, logouticon;
     FirebaseAuth mauth;

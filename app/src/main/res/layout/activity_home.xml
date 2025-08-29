@@ -218,14 +218,14 @@
                     android:layout_columnWeight="1"
                     android:padding="10dp"
                     android:background="@drawable/about_block_bg"
-                        android:id="@+id/gallarybtn"
+                    android:id="@+id/gallarybtn"
                     android:clickable="true"
                     android:focusable="true"
 
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="10dp"
                     android:orientation="vertical"
+
                     android:layout_height="120dp"
                     android:layout_width="120dp">
                     <ImageView
@@ -241,9 +241,8 @@
                         android:text="Gallary"
                         android:textColor="@color/black"
                         android:textStyle="bold" />
-
-
                 </LinearLayout>
+
                 <LinearLayout
                     android:gravity="center"
                     android:layout_rowWeight="1"

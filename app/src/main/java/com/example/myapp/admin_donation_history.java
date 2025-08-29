@@ -78,8 +78,9 @@ public class admin_donation_history extends AppCompatActivity {
                             int amount = Integer.parseInt(amountstr);
                             totalamount += amount;
                             Map<String, String> map = new HashMap<>();
-                            map.put("name", "name" + name);
-                            map.put("amount", "amount" + amountstr);
+                            map.put("name", name);
+                            map.put("amount", amountstr);
+
                             donationList.add(map);
 
                         }
