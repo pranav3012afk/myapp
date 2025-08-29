@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_bg"
+    android:orientation="vertical"
+    tools:context=".aboutus">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/img_1" />
+
+        <TextView
+            android:id="@+id/Welcome"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="150dp"
+
+            android:text="Welcome!"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="HopeForAll Foundation is a non-profit organization dedicated to bringing positive change to underprivileged communities. Our mission is to empower lives through education, healthcare, nutrition, and disaster relief. Founded in 2018, we have impacted thousands of lives by collaborating with volunteers, donors, and local partners. Our key initiatives include free education, meal distribution, health camps, women empowerment, and disaster relief efforts. We believe in transparency, community-driven action, and a world where everyone has a chance to live with dignity and opportunity."
+         android:textColor="@color/white"
+         android:textSize="16sp"
+         android:padding="16dp"
+         />
+
+ </LinearLayout>
+</ScrollView>
+    <include
+        layout="@layout/footernav" />
+</LinearLayout>

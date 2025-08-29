@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">myapp</string>
+    <string name="Hello">Hello</string>
+    <string name="enter_your_email">enter your email</string>
+    <string name="make_them_smile">Make them smile</string>
+    <string name="together_for_a_brighter_tomorrow">Together for a Brighter Tomorrow</string>
+    <string name="enter_your_name" />
+    <string name="signup">signup</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="new_user_click_here">New User ? Click Here !</string>
+    <string name="already_a_user_click_here">Already a user? click_here</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="username">UserName</string>
+    <string name="my_profile">My Profile</string>
+    <string name="enter_your_new_password">Enter your new password</string>
+    <string name="change_password">Change Password</string>
+    <string name="donation_history">Donation history</string>
+    <string name="log_out">Log Out</string>
+    <string name="go_to_login_page">go to login page</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@drawable/gradiant_bg"
+    tools:context=".donationbox">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/img_1" />
+
+        <TextView
+            android:id="@+id/welcome"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="150dp"
+
+            android:text="Welcome!"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donation box"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="0dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select the amount "
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <SeekBar
+                android:layout_marginTop="15dp"
+                android:max="10000"
+                android:id="@+id/amountseekbar"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </SeekBar>
+            <TextView
+                android:id="@+id/selectedamount"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="INR 0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:id="@+id/Dmessage"
+                android:text="Enter your message"
+                android:background="@drawable/custom_et"
+                android:padding="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Donate now"
+                android:layout_marginTop="20dp"
+                android:id="@+id/donatebtn"
+
+                android:background="@drawable/cor"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/donhistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donation History"
+        android:layout_gravity="right"
+
+        android:background="@drawable/cor"
+
+       >
+
+    </Button>
+    <include
+        layout="@layout/footernav">
+
+    </include>
+
+</LinearLayout>

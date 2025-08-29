@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Myapp"
+        tools:targetApi="31">
+        <activity
+            android:name=".phonelogin"
+            android:exported="false" />
+        <activity
+            android:name=".otpverification"
+            android:exported="false" />
+        <activity
+            android:name=".eventactivity"
+            android:exported="false" />
+        <activity
+            android:name=".aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".gallary"
+            android:exported="false" />
+        <activity
+            android:name=".volenteer"
+            android:exported="false" />
+        <activity
+            android:name=".DeveloperInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user_profile"
+            android:exported="false" />
+        <activity
+            android:name=".donation_list"
+            android:exported="false" />
+        <activity
+            android:name=".admin_donation_history"
+            android:exported="false" />
+        <activity
+            android:name=".adminmessages"
+            android:exported="false" />
+        <activity
+            android:name=".AdminPanel"
+            android:exported="false" />
+        <activity
+            android:name=".user_list"
+            android:exported="false" />
+        <activity
+            android:name=".Donation_History"
+            android:exported="false" />
+        <activity
+            android:name=".donationbox"
+            android:exported="false" />
+        <activity
+            android:name=".contact_us"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" /> <!-- Welcome Screen should be the first screen -->
+        <activity
+            android:name=".welcome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Signup Activity (if applicable) -->
+        <activity
+            android:name=".signup"
+            android:exported="false" /> <!-- MainActivity should NOT have a LAUNCHER tag -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_bg"
+    tools:context=".user_profile">
+<ScrollView
+
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="0dp"
+    android:background="@drawable/gradiant_bg"
+    >
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/my_profile"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white">
+
+
+         </TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prof1">
+
+
+
+        </ImageView>
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="italic"
+            android:text="@string/username"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+            android:textSize="20sp"
+            android:textColor="@color/white">
+
+        </TextView>
+        <TextView
+            android:id="@+id/profileemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textStyle="italic"
+            android:text="@string/email"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+            android:textSize="20sp"
+            android:textColor="@color/white">
+
+        </TextView>
+        <TextView
+            android:id="@+id/profilephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textStyle="italic"
+            android:text="@string/phone"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+            android:textSize="20sp"
+            android:textColor="@color/white">
+
+        </TextView>
+        <EditText
+            android:id="@+id/newpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_et"
+            android:padding="15dp"
+            android:hint="@string/enter_your_new_password"
+            android:textColorHint="@color/white">
+
+        </EditText>
+
+        <GridLayout
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:rowCount="2">
+
+            <LinearLayout
+
+                android:id="@+id/changepass"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_et"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/prof1">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/change_password"
+                    android:textColor="@color/white"
+
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/admindonation"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_et"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+
+                    android:src="@drawable/don1">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/donation_history"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/profilelogout"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_et"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/img_13">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/log_out"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+        </GridLayout>
+        <Button
+            android:id="@+id/gotologinpage"
+            android:background="@drawable/custom_et"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_login_page">
+
+        </Button>
+    </LinearLayout>
+</ScrollView>
+
+    <include
+        layout="@layout/footernav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+

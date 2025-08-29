@@ -1,0 +1,297 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_bg"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="100dp"
+            android:src="@drawable/img_1" />
+
+        <TextView
+            android:id="@+id/Welcome"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="150dp"
+
+            android:text="Welcome!"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ViewFlipper
+                android:layout_marginTop="-5dp"
+                android:inAnimation="@android:anim/fade_in"
+                android:outAnimation="@android:anim/fade_out"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                android:id="@+id/homeSlider"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:src="@drawable/banner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/banner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@drawable/banner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </ViewFlipper>
+            <GridLayout
+                android:padding="16dp"
+                android:rowCount="2"
+                android:columnCount="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/aboutusbtn"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:padding="10dp"
+                    android:background="@drawable/custom_et"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="57dp"
+                        android:src="@drawable/prof1">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About us"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:id="@+id/eventbtn"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:layout_columnWeight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/about_block_bg"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp">
+
+                    <ImageView
+                        android:layout_width="89dp"
+
+                        android:layout_height="79dp"
+                        android:src="@drawable/ev3">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Events"
+
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/about_block_bg"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/volenterbtn"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp">
+
+                    <ImageView
+                        android:src="@drawable/volan"
+                        android:layout_width="89dp"
+                        android:layout_height="79dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Become a Volentear!"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                       android:id="@+id/donationbtn"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:padding="10dp"
+                    android:background="@drawable/about_block_bg"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp">
+                    <ImageView
+                        android:src="@drawable/don1"
+                        android:layout_width="89dp"
+                        android:layout_height="79dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Donation Box"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/about_block_bg"
+                        android:id="@+id/gallarybtn"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="120dp"
+                    android:layout_width="120dp">
+                    <ImageView
+                        android:src="@drawable/gal"
+                        android:layout_width="89dp"
+                        android:layout_height="79dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gallary"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/about_block_bg"
+                    android:id="@+id/contactUsLayout"
+                    android:clickable="true"
+                    android:focusable="true"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+
+                    android:layout_height="120dp"
+                    android:layout_width="120dp">
+                    <ImageView
+                        android:src="@drawable/con"
+                        android:layout_width="89dp"
+                        android:layout_height="79dp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact us"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <include
+        layout="@layout/footernav" />
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_bg"
+    tools:context=".AdminPanel">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_height="150dp"
+        android:src="@drawable/img_1">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ADMIN PANEL"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#050101"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+    <GridLayout
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:rowCount="2"
+        android:layout_weight="1"
+        android:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:gravity="center"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:id="@+id/allusers"
+        android:clickable="true"
+        android:focusable="true"
+
+        android:padding="10dp"
+        android:background="@drawable/custom_et"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_height="120dp"
+        android:layout_width="120dp">
+        <ImageView
+            android:src="@drawable/prof1"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All users "
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/admindonation"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:padding="10dp"
+            android:background="@drawable/custom_et"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_height="120dp"
+            android:layout_width="120dp">
+        <ImageView
+            android:src="@drawable/prof1"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donation history"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:gravity="center"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:id="@+id/adminmessage"
+            android:clickable="true"
+            android:focusable="true"
+
+            android:padding="10dp"
+            android:background="@drawable/custom_et"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:layout_height="120dp"
+            android:layout_width="120dp">
+            <ImageView
+                android:src="@drawable/prof1"
+                android:layout_width="48dp"
+                android:layout_height="48dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </GridLayout>
+    <include
+        layout="@layout/footernav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

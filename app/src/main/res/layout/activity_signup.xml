@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_bg"
+    android:layout_gravity="center"
+    tools:context=".signup">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_1" />
+
+    <EditText
+
+        android:id="@+id/signupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="enter your name"
+        android:textSize="16sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+
+        android:padding="20dp"
+        android:background="@drawable/custom_et"
+        android:textColorHint="#BBDEFB"
+        android:textColor="@color/white"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <EditText
+        android:background="@drawable/custom_et"
+        android:id="@+id/signupemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:hint="enter your email"
+        android:textColorHint="#BBDEFB"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:background="@drawable/custom_et"
+        android:id="@+id/signuppassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:hint="enter your password"
+        android:inputType="numberPassword"
+        android:textColorHint="#BBDEFB"
+
+        android:padding="20dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:background="@drawable/custom_et"
+        android:id="@+id/signupmobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="16sp"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="14dp"
+
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="enter your mobile"
+        android:inputType="numberPassword"
+        android:textColorHint="#BBDEFB"
+
+        android:padding="20dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/signbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/signup_button_bg"
+        android:padding="20dp"
+        android:text="@string/signup"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/signupno"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/already_a_user_click_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</LinearLayout>

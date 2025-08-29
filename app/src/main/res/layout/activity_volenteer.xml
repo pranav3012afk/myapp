@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant_bg"
+    tools:context=".volenteer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/img_1"
+            android:layout_marginRight="40dp"
+            >
+        </ImageView>
+        <TextView
+            android:layout_weight="1"
+            android:text="Welcome!"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address : Pune,India"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="0dp"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address : Pune,India"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Mobile : 9875654127"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Email : ngo123@gmail.com"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sumbit Your FORM"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="20dp">
+        </TextView>
+            <EditText
+                android:id="@+id/entername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="enter your name"
+                android:textSize="16sp"
+                android:background="@drawable/custom_et"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#BBDEFB"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/enternumber"
+                android:hint="enter your Number"
+                android:textSize="16sp"
+                android:background="@drawable/custom_et"
+                android:padding="15dp"
+                android:textColorHint="#BBDEFB"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enteraddress"
+                android:layout_gravity="center"
+                android:hint="enter your address"
+                android:textSize="16sp"
+                android:background="@drawable/custom_et"
+                android:padding="15dp"
+                android:textColorHint="#BBDEFB"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/entermessage"
+                android:hint="enter your Message"
+                android:textSize="16sp"
+                android:background="@drawable/custom_et"
+                android:padding="20dp"
+                android:textColorHint="#BBDEFB"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+            </EditText>
+            <Button
+
+                android:id="@+id/btSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/black"
+                android:padding="15dp"
+                android:text="Submit"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <include
+        layout="@layout/footernav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
